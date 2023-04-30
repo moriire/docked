@@ -4,10 +4,10 @@ on:
     branches:
       - main
 
-jobs:
-  jobggg_1:
-    name: push image
-    - steps:
-      name: docker login
-      id: date
-      run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
+  jobs:
+    jobggg_1:
+      name: push image
+      - steps:
+        name: docker login
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
