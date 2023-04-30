@@ -4,4 +4,4 @@ on:
     branches:
       - main
 jobs:
-  run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
+  - run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
