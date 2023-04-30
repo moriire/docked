@@ -4,7 +4,5 @@ on:
     branches:
       - main
 jobs:
-  jobggg_1:
-    uses: ubuntu-latest
-    name: docker login
-    run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
+  name: docker login
+  run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
