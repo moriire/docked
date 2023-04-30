@@ -1,11 +1,14 @@
 name: This a workflow title
 on:
-  - push
+  push:
+    branches:
+      - main
 
 jobs:
-  - name: push-image-to-docker-hub
-  runs-on: ubuntu-latest  # runner name : (ubuntu latest version)
-  steps:
-    name: docker login
-    id: date
-    run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
+  job_1:
+    name: push-image-to-docker-hub
+    runs-on: ubuntu-latest  # runner name : (ubuntu latest version)
+    steps:
+      name: docker login
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
