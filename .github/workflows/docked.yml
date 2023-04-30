@@ -6,7 +6,7 @@ on:
 jobs:
   jobggg_1:
     name: push image
-    steps:
+    - steps:
       name: docker login
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
