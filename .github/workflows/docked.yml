@@ -4,7 +4,6 @@ on:
     branches:
       - main
 jobs:
-  goods:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "::set-output name=date"
+  runs-on: ubuntu-latest
+  steps:
+    - run: echo "::set-output name=date"
