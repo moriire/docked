@@ -8,7 +8,7 @@ jobs:
   job_1:
     name: push-image-to-docker-hub
     runs-on: ubuntu-latest  # runner name : (ubuntu latest version)
-    steps:
+    - steps:
       name: docker login
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
