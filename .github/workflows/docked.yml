@@ -5,9 +5,8 @@ on:
       - main
 
 jobs:
-  - job_1:
+  jobggg_1:
     name: push image
-    runs-on: ubuntu-latest  # runner name : (ubuntu latest version)
     - steps:
       name: docker login
       id: date
