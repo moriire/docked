@@ -4,5 +4,4 @@ on:
     branches:
       - main
 jobs:
-  name: docker login
   run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
