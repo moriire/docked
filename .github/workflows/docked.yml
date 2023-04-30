@@ -3,7 +3,7 @@ on:
   - push
 
 jobs:
-  name: push-image-to-docker-hub:  # job name
+  name: push-image-to-docker-hub # job name
   runs-on: ubuntu-latest  # runner name : (ubuntu latest version)
   steps:
     name: docker login
