@@ -5,7 +5,7 @@ on:
       - main
 
 jobs:
-  job_1:
+  - job_1:
     name: push image
     runs-on: ubuntu-latest  # runner name : (ubuntu latest version)
     - steps:
