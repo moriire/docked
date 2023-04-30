@@ -1,12 +1,6 @@
 name: This a workflow title
 on:
-  - push:
-
-    # Env variable
-    #env:
-    #DOCKER_USER: ${{secrets.DOCKER_USER}}
-    #DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-    #REPO_NAME: ${{secrets.REPO_NAME}}
+  - push
 
 jobs:
   name: push-image-to-docker-hub:  # job name
